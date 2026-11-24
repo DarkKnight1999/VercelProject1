@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yashwanth | Portfolio</title>
+
+<style>
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #FFFDF8;
+    color: #382B2B;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+header {
+    background: #FFFDF8;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header h2 {
+    color: #722F37;
+}
+
+nav a {
+    text-decoration: none;
+    color: #382B2B;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #722F37;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 100px 8%;
+    background: #F5EBDD;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #722F37;
+}
+
+.hero p {
+    color: #796B65;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: #722F37;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4A1720;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #722F37;
+    border: 1px solid #722F37;
+}
+
+.btn-outline:hover {
+    background: #722F37;
+    color: #FFFFFF;
+}
+
+/* COMMON SECTIONS */
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #722F37;
+}
+
+/* ABOUT */
+.about {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    color: #796B65;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #FFFDF8;
+    border: 1px solid #E8D9CC;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #F5EBDD;
+    border-color: #722F37;
+}
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #FFFDF8;
+    border: 1px solid #E8D9CC;
+    border-radius: 10px;
+    padding: 25px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #722F37;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(74,23,32,0.08);
+}
+
+.project-card h3 {
+    color: #722F37;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #8B7770;
+    font-size: 14px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: #F5EBDD;
+}
+
+.contact p {
+    color: #796B65;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #796B65;
+    font-size: 13px;
+    background: #FFFDF8;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <h2>Yashwanth</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- INTRODUCTION -->
+<div class="hero">
+
+    <h1>Hello, I'm <span>Yashwanth TD</span></h1>
+
+    <p>
+        Software Tester | Automation Testing |
+        Selenium | Playwright | TypeScript
+    </p>
+
+    <a href="#projects" class="btn">View My Work</a>
+
+    <!-- ADD YOUR GOOGLE DRIVE RESUME LINK LATER -->
+    <a href="https://docs.google.com/document/d/1JKY8uPJcR_aNeauzrwPtpZOZQsaQM1O-/edit?usp=sharing&ouid=104222436614592246672&rtpof=true&sd=true"
+   class="btn btn-outline"
+   target="_blank"
+   rel="noopener noreferrer">
+   Download Resume
+    </a>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            Welcome to my portfolio! I'm passionate about
+            software testing, automation and technology.
+            I enjoy learning new tools, solving problems
+            and continuously improving my technical skills.
+        </p>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Manual Testing</div>
+        <div class="skill">Selenium</div>
+        <div class="skill">Playwright</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">Java</div>
+        <div class="skill">Postman</div>
+        <div class="skill">API Testing</div>
+        <div class="skill">GitHub</div>
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Project 01</h3>
+            <p>Project 1: Specialized in developing and executing test automation frameworks using Selenium WebDriver and Java to validate Salesforce and other enterprise applications. Automated functional and regression testing. Additionally, leveraged AccelQ, an AI-based automation tool, for scripting complex workflows and enhancing overall test coverage. Conducted API testing using Postman to validate data accuracy and seamless integration.
+                Achieved customer satisfaction rating of CSAT 4.8/5
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 02</h3>
+            <p>Project 2: Mobile Testing for Red One - Coca-Cola Project -     
+Contributed to E2E mobile application testing, focusing on Android and iOS applications. Played a key role in manual and automation testing, using Appium for automation and Android Studio for debugging to ensure high-quality mobile application performance. Executed regression and functional testing while collaborating with Azure DevOps.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 03</h3>
+            <p>Integration testing - Carried out Map and E2E testing with various multiline, multisplit data formats (Json, EDI and DAT) and ensured seamless process flow in middleware services and carried out target data comparision and status verificaton.
+                Used tools like Jira, FTP, Postman and AWS.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Get In Touch</h2>
+
+    <p>Feel free to connect with me.</p>
+
+    <a href="mailto:yourmail@example.com" class="btn">
+        Contact Me
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Yashwanth TD. All Rights Reserved.
+</footer>
+
+</body>
+</html>
